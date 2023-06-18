@@ -162,7 +162,6 @@ body {
   background-color: #ffffff;
   position: absolute;
   right: 0;
-  top: 42.5%;
   transition: 0.5s;
 }
 
@@ -210,8 +209,11 @@ body {
     right: -100vw;
   }
 
-  .menu-list-item:not(:last-child) {
+  .menu-list-item {
     margin-bottom: 3vmin;
+  }
+  .menu-list-item-last {
+    margin-bottom: 0;
   }
 
   .menu-list {
@@ -235,8 +237,12 @@ body {
   opacity: 0;
 }
 
-.menu-list-item:not(:last-child) {
+.menu-list-item {
   margin-bottom: 18px;
+}
+
+.menu-list-item-last {
+    margin-bottom: 0;
 }
 
 .menu-list-item::after {
@@ -261,7 +267,7 @@ body {
 }
 
 .logo-link {
-  margin-top: 48.6vmin;
+  margin-top: 48vmin;
   display: flex;
   justify-content: center;
 }
@@ -434,8 +440,11 @@ body {
   border-bottom: 3px solid #eeeeee;
 }
 
-.main-article:not(:first-child) {
+.main-article {
   margin-top: 34px;
+}
+.blog-first-article {
+    margin-top: 0;
 }
 
 .main-article-preview {
@@ -501,10 +510,6 @@ body {
   line-height: 1.4;
 }
 
-.main-article-text:not(:first-child) {
-  margin-top: 8px;
-}
-
 .posts-article {
   width: 100%;
   margin: 22px auto 0;
@@ -512,7 +517,7 @@ body {
   justify-content: space-between;
 }
 
-.posts-article:first-of-type {
+.posts-article-first {
   margin-top: 6px;
 }
 
@@ -753,8 +758,11 @@ body {
   display: flex;
 }
 
-.footer-socials-item:not(:first-child) {
+.footer-socials-item {
   margin-left: 25px;
+}
+.footer-socials-item-first {
+    margin-left: 0;
 }
 
 .footer-socials-links {
@@ -867,7 +875,7 @@ span.alert {
   color: red;
 }
 
-.feedback-radio-text:first-of-type {
+.feedback-radio-text-left {
   margin-right: 28px;
 }
 
@@ -921,10 +929,12 @@ span.alert {
 
   .shop-article {
     margin: min(257px, calc(100vw - 103px)) auto 22px;
+    /* внешний отступ в карточке товара в магазине*/
   }
 
   .shop-article-preview {
     top: max(-257px, calc(103px - 100vw));
+    /* сдвиг превью-картинки товара вверх*/
   }
 
 }
@@ -947,12 +957,12 @@ span.alert {
     width: calc(50% - 1px);
   }
 
-  .trends-article:nth-child(2n) {
+  .trends-article-odd {
     border-right: 1px solid #c2c3ba;
     margin-right: 2px;
   }
 
-  .trends-article:nth-child(2n+1) {
+  .trends-article-even {
     border-left: 1px solid #c2c3ba;
   }
 
@@ -965,7 +975,7 @@ span.alert {
 
   .main-article-preview {
     flex-basis: 381px;
-    margin-right: 3%;
+    margin-right: 10px;
   }
 
   .main-article-content {
@@ -1099,8 +1109,12 @@ span.alert {
 
   }
 
-  .main-article:not(:first-child) {
+  .main-article {
     margin-top: 41px;
+  }
+
+  .blog-first-article {
+    margin-top: 0;
   }
 
   .main-article-preview {
@@ -1125,7 +1139,7 @@ span.alert {
   .blog-aside {
     max-width: 300px;
     flex: 1 1 271px;
-    margin-left: 5%;
+    margin-left: 10px;
   }
 
   .aside-new-posts {
@@ -1138,7 +1152,7 @@ span.alert {
   }
 
   .posts-item {
-    margin-left: 7%;
+    margin-left: 10px;
   }
 
   .aside-mailing {
@@ -1272,9 +1286,13 @@ span.alert {
     justify-content: flex-start;
   }
 
-  .menu-list-item:not(:last-child) {
+  .menu-list-item {
     margin-bottom: 0;
     margin-right: 35px;
+  }
+
+  .menu-list-item-last {
+    margin-right: 0;
   }
 
   .menu-list-item::after {
@@ -1347,8 +1365,12 @@ span.alert {
 
   }
 
-  .main-article:not(:first-child) {
+  .main-article {
     margin-top: 50px;
+  }
+
+  .blog-first-article {
+    margin-top: 0;
   }
 
   .main-article-preview {
@@ -1380,7 +1402,7 @@ span.alert {
   .blog-aside {
     max-width: 300px;
     flex: 1 1 271px;
-    margin-left: 9%;
+    margin-left: 10px;
   }
 
   .aside-new-posts {
@@ -1393,7 +1415,7 @@ span.alert {
   }
 
   .posts-item {
-    margin-left: 6.5%;
+    margin-left: 10px;
   }
 
   .aside-tags-list {
@@ -1479,7 +1501,7 @@ span.alert {
     margin-right: -3px;
   }
 
-  .feedback-radio-text:first-of-type {
+  .feedback-radio-text-left {
     margin-right: 12px;
   }
 
@@ -1533,8 +1555,8 @@ span.alert {
     margin-top: -5px;
   }
 
-  .feedback-radio-text:first-of-type {
-    margin-right: 10%;
+  .feedback-radio-text-left {
+    margin-right: 10px;
   }
 
   span.alert {
